@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/135dcfda10.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <input type="text" name="display" id="display">
+        </div>
+        <div class="section">
+            <button onclick="getData('(')">(</button>
+            <button onclick="getData(')')">)</button>
+            <button onclick="clearData('')">C</button>
+            <button onclick="backData()"><i class="fa-solid fa-reply"></i></button>
+        </div>
+        <div class="section">
+            <button onclick="getData('7')">7</button>
+            <button onclick="getData('8')">8</button>
+            <button onclick="getData('9')">9</button>
+            <button onclick="getData('/')">/</button>
+        </div>
+        <div class="section">
+            <button onclick="getData('4')">4</button>
+            <button onclick="getData('5')">5</button>
+            <button onclick="getData('6')">6</button>
+            <button onclick="getData('*')">x</button>
+        </div>
+        <div class="section">
+            <button onclick="getData('1')">1</button>
+            <button onclick="getData('2')">2</button>
+            <button onclick="getData('3')">3</button>
+            <button onclick="getData('-')">-</button>
+        </div>
+        <div class="section">
+            <button onclick="getData('0')">0</button>
+            <button onclick="getData('.')">.</button>
+            <button onclick="expressData('=')">=</button>
+            <button onclick="getData('+')">+</button>
+        </div>
+    </div>
+</body>
+</html>
